@@ -1,4 +1,5 @@
 import java.util.*;
+import java.io.*;
 
 class CheckLogic
 {
@@ -6,14 +7,10 @@ class CheckLogic
     {
         {
             System.out.println("This is the result.");
-            String response = "This is the result.";
-            positionOfFirstWord = getFirstWordPosition(response);
-            if(positionOfFirstWord == 1) 
-                System.out.println("First word is: ", response);
-            else
-            {
-                
-            }
+            String response = "This is the response.";
+            int positionOfFirstWord = getFirstWordPosition(response);
+            if(positionOfFirstWord == 1) { System.out.println("First word is: " + response); }
+            else { System.out.println("Deugging"); }
         }
     }
 
