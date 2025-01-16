@@ -1,5 +1,8 @@
 import java.lang.reflect.Type;
 
+class Type
+{}
+
 class UserPostsForNewReturn
 {
     public static void main(String[] args) 
@@ -12,7 +15,8 @@ class UserPostsForNewReturn
     
     static Req getPostRequest()
     {
-
+        System.out.println("Enter request info.: ");
+        String req_info = System.console().readLine();
     }
 
     static Ret getReturn()
