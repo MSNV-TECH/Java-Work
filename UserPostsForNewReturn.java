@@ -1,5 +1,3 @@
-import java.lang.reflect.Type;
-
 class Type
 {
     String savedVal;
@@ -39,9 +37,9 @@ class Req
 
 class Ret
 {
-    String getInfo = "Okay";
-    String info = "new";
-    updateGetInfo() { getInfo = getInfo + info; }
+    static String getInfo = "Okay";
+    static String info = "new";
+    static void updateGetInfo() { getInfo = getInfo + info; }
     void Ret(String retDefn) { info = retDefn; }
     public static void main(String[] args) {
         updateGetInfo();
@@ -54,7 +52,6 @@ class UserPostsForNewReturn
     {
         Type vType = new Type("Crazy!");
     //    Integer<T> ter_num;
-        
     }
 
     
@@ -62,8 +59,7 @@ class UserPostsForNewReturn
     {
         System.out.println("Enter request info.: ");
         String req_info = System.console().readLine();
-        id = new Req();
-        id = 58;
+        Req id = new Req(58);
         return id;
     }
 
