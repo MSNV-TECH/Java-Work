@@ -7,7 +7,7 @@ class Type
         return "Called";
     }
 
-    void Type(String typeName)
+    Type(String typeName)
     {
         savedVal = typeName;
     }
@@ -19,14 +19,16 @@ class Type
 
 class Req
 {
+    int requestID = 0;
+
     String Req()
     {
         return "Requested";
     }
 
-    String Req(int reqID)
+    Req(int reqID)
     {
-        return "Requested";
+        requestID = reqID;
     }
 
     public static void main(String[] args) 
@@ -40,7 +42,7 @@ class Ret
     static String getInfo = "Okay";
     static String info = "new";
     static void updateGetInfo() { getInfo = getInfo + info; }
-    void Ret(String retDefn) { info = retDefn; }
+    Ret(String retDefn) { info = retDefn; }
     public static void main(String[] args) {
         updateGetInfo();
     }
