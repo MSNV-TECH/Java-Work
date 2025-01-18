@@ -54,6 +54,7 @@ class UserPostsForNewReturn
     {
         Type vType = new Type("Crazy!");
     //    Integer<T> ter_num;
+        System.out.println(getPostRequest());
     }
 
     
