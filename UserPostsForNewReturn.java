@@ -52,9 +52,12 @@ class UserPostsForNewReturn
 {
     public static void main(String[] args) 
     {
-        Type vType = new Type("Crazy!");
+        Type vype = new Type("Crazy!");
     //    Integer<T> ter_num;
         System.out.println(getPostRequest());
+        System.out.println(getReturn());
+        System.out.println(vype);
+        System.out.println(getUsers());
     }
 
     
