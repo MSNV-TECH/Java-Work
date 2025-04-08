@@ -11,6 +11,12 @@ class CheckLogic
         if(positionOfFirstWord == 1) { System.out.println("First word is: " + response); }
         else { System.out.println("Deugging"); }
         Byte b = Byte.decode("0x5");
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter: ");
+        String resp = sc.next();
+        System.out.print(resp);
+        sc.close();
+        System.out.println();
         processInput(b);
     }
 
